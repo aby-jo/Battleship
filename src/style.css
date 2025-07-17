@@ -1,0 +1,165 @@
+body{
+    background-image: url('../images/battleshipBackground.jpeg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* background-position: enter; */
+}
+.welcome{
+    background-color: #0d1b2a; /* Navy charcoal */
+    color: #f8f8f2;
+    border-color: lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.welcome .greeting{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.welcome #input{
+    min-height: 30px;
+}
+.welcome button{
+    background-color: #004d4d;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-height: 30px;
+}
+.welcome button:hover{
+background-color: #006666;
+}
+.battleship{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    height: fit-content;
+    color: white;
+}
+
+.head{
+    text-align: center;
+    grid-column: 1/-1;
+    max-height: 100px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.instructions{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 20px;
+    border: solid;
+    border-radius:10px;
+}
+.instructions .heading{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+.instructions li{
+    padding: 5px;
+}
+.boardgroup{
+    margin-left: 20px;
+    display: flex;
+    gap: 60px;
+}
+.boardgroup .boardname{
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+.shipdock{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.shipdock .heading{
+    padding-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.allships{
+    height: 160px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cell{
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 18px;
+}
+.playerboard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 350px;
+}
+
+.miss{
+    background-color: black;
+}
+.hit{
+    background-color: red;
+}
+.highlight{
+    background-color: aqua;
+}
+.shipishere{
+    background-color: orange;
+}
+.shipcontainer {
+  width: calc(30px * var(--len));
+  height: 30px;
+}
+
+.shipcontainer.vertical {
+  width: 30px;
+  height: calc(30px * var(--len));
+}
+.shipcontainer button{
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.resetdialog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #0d1b2a; /* Navy charcoal */
+    color: #f8f8f2;
+    border-color: lightblue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.resetdialog button{
+    background-color: #004d4d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    min-height: 30px;
+    
+}
+.resetdialog button:hover{
+background-color: #006666;
+}

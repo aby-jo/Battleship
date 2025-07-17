@@ -1,4 +1,6 @@
-const ship = require("../utils/ship");
+import { ship } from "../src/utils/ship"
+
+/* eslint-disable no-undef */
 test('isSunk returns false when ship is not fully hit',()=>{
     const bship2=ship(2)
     expect(bship2.isSunk()).toBe(false)

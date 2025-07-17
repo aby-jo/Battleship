@@ -14,4 +14,4 @@ const ship=(len)=>{
     }
     return{ hit,isSunk,getLen,getTimesHit}
 }
-module.exports=ship
+export{ship}

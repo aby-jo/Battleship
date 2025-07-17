@@ -1,8 +1,8 @@
-const gameboard = require("./gameboard")
+const { gameboard } = require("./gameboard")
 
 const player=(type)=>{
-    let player_type=type
+    let playerType=type
     let playergameboard=gameboard()
-    return{player_type,playergameboard}
+    return{playerType,playergameboard}
 }
 module.exports=player
